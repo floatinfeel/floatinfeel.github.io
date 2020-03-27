@@ -1,0 +1,149 @@
+
+
+h2{
+	text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: #1e2245;
+}
+
+#regForm {
+  background-color: #ffffff;
+  margin: 100px auto;
+  padding: 40px;
+  width: 70%;
+  min-width: 300px;
+}
+
+body {
+  
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+.container {
+  border: 2px solid #dedede;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.container img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+.time-right {
+  float: right;
+  color: #aaa;
+}
+
+.time-left {
+  float: left;
+  color: #999;
+}
+
+#text1 {
+  animation: cssAnimation 4s 0s forwards;
+  visibility: hidden;
+}
+
+#text2 {
+  animation: cssAnimation 3s 3s forwards;
+  visibility: hidden;
+}
+
+#text3 {
+  animation: cssAnimation 2s 6s forwards;
+  visibility: hidden;
+}
+
+#text4 {
+  animation: cssAnimation 1s 10s forwards;
+  visibility: hidden;
+}
+
+#over{
+	animation: cssAnimation 0s 15s forwards;
+  visibility: hidden;
+}
+
+@keyframes cssAnimation {
+  to   { visibility: visible; }
+}
+
+p{
+	text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  color: #1e2245;
+  font-size: 20pt;
+}
+
+#showMe {
+  animation: cssAnimation 0s 5s forwards;
+  visibility: hidden;
+}
+
+.button {
+  border-radius: 4px;
+  background: url(../img/glitch.gif);
+  border-style: none;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+  font-family: 'Open Sans', sans-serif;
+  color: lightgrey;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 400px;
+  height: 65px;
+  transition: all 0.5s;
+  cursor: pointer;
+ 
+  border-radius: 13px 13px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
